@@ -31,6 +31,33 @@ def depth(expression):
     return 1 + max(depth(expression[1]), depth(expression[2]))
 
 
+def simplify(expression):
+    """
+    Reduce nested products and sums of a mathematical expression into
+    a single sum of products.
+    (x + 1) * (y + 3) = xy + 3x + y + 3y
+    """
+    pass
+
+
+def repr_expresion(expresion):
+    result = []
+    _repr(expresion, result)
+    print(" ".join(result))
+
+
+def _repr(expression, result):
+    if isinstance(expression, (tuple, list)):
+        result.append("(")
+        _repr(expression[1], result)
+        result.append(expression[0])
+        _repr(expression[2], result)
+        result.append(")")
+    else:
+        result.append(expression if isinstance(expression, str) else str(expression))
+    
+
+
 
 
 if __name__ == "__main__":
@@ -49,5 +76,7 @@ if __name__ == "__main__":
     print(f"{'EXERCISE 2':=^30}")
 
     expression = ('/', ('expt', 'x', 5), ('expt', ('-', ('expt', 'x', 2), 1), ('/', 5, 2)))
+    repr_expresion(expression)
+
     print(depth(expression))
 
