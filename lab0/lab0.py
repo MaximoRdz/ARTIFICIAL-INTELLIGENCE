@@ -20,10 +20,16 @@ def depth(expression):
     """
     Compute the depth of a mathematical expression
     Each function it's represented by a tuple of the form:
-    ('operation', 'var', val)
+    ('operation', 'var', val) which resembles the tree data
+    structure (node, left, right).
     so, for example:
     exp(2+5) -> ('exp', 'x', ('+', 2, 5)) -> Tree Data Structure
     """
+    if not isinstance(expression, (list, tuple)):
+        return 0
+    
+    return 1 + max(depth(expression[1]), depth(expression[2]))
+
 
 
 
@@ -41,4 +47,7 @@ if __name__ == "__main__":
     print(count_pattern(pattern, chain))
 
     print(f"{'EXERCISE 2':=^30}")
+
+    expression = ('/', ('expt', 'x', 5), ('expt', ('-', ('expt', 'x', 2), 1), ('/', 5, 2)))
+    print(depth(expression))
 
