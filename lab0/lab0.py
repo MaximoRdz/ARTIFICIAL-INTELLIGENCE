@@ -36,8 +36,36 @@ def simplify(expression):
     Reduce nested products and sums of a mathematical expression into
     a single sum of products.
     (x + 1) * (y + 3) = xy + 3x + y + 3y
+    ('operation', left, right)
     """
-    pass
+    if not isinstance(expression, list):
+        return expression
+    
+    if expression[0] == "*":
+        if isinstance(expression[1], list) and expression[1][0] == "+":
+            expression = [
+                "+",
+                ["*", expression[1][1], expression[2]],
+                ["*", expression[1][2], expression[2]]
+                ]
+            simplify(expression)
+        elif isinstance(expression[2], list) and expression[2][0] == "+":
+            expression = [
+                "+",
+                ["*", expression[1], expression[2][1]],
+                ["*", expression[1], expression[2][2]]
+                ]
+            simplify(expression)
+
+    """
+    TODO: recursion or iteration? which is clearer?
+    """
+    
+
+    
+
+
+
 
 
 def repr_expresion(expresion):
