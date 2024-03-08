@@ -27,7 +27,7 @@ def depth(expression):
     """
     if not isinstance(expression, (list, tuple)):
         return 0
-    
+
     return 1 + max(depth(expression[1]), depth(expression[2]))
 
 
@@ -36,41 +36,34 @@ def simplify(expression):
     Reduce nested products and sums of a mathematical expression into
     a single sum of products.
     (x + 1) * (y + 3) = xy + 3x + y + 3y
-    ('operation', left, right)
+    ('operation', left, right) DFS simplification in place
     """
     if not isinstance(expression, list):
-        return expression
-    
-    if expression[0] == "*":
-        if isinstance(expression[1], list) and expression[1][0] == "+":
-            expression = [
-                "+",
-                ["*", expression[1][1], expression[2]],
-                ["*", expression[1][2], expression[2]]
-                ]
-            simplify(expression)
-        elif isinstance(expression[2], list) and expression[2][0] == "+":
-            expression = [
-                "+",
-                ["*", expression[1], expression[2][1]],
-                ["*", expression[1], expression[2][2]]
-                ]
-            simplify(expression)
+        return
 
-    """
-    TODO: recursion or iteration? which is clearer?
-    """
-    
+    if not expression[0] == "*":
+        return
 
-    
+    left_child = expression[1]
+    right_child = expression[2]
+
+    if isinstance(left_child, list) and left_child[0] == "+":
+        expression[0] = "+"
+        expression[1] = ["*", left_child[1], right_child]
+        expression[2] = ["*", left_child[2], right_child]
+
+    elif isinstance(right_child, list) and right_child[0] == "+":
+        expression[0] = "+"
+        expression[1] = ["*", left_child, right_child[1]]
+        expression[2] = ["*", left_child, right_child[2]]
+
+    simplify(expression[1])
+    simplify(expression[2])
 
 
-
-
-
-def repr_expresion(expresion):
+def repr_expression(expression):
     result = []
-    _repr(expresion, result)
+    _repr(expression, result)
     print(" ".join(result))
 
 
@@ -83,9 +76,6 @@ def _repr(expression, result):
         result.append(")")
     else:
         result.append(expression if isinstance(expression, str) else str(expression))
-    
-
-
 
 
 if __name__ == "__main__":
@@ -103,8 +93,19 @@ if __name__ == "__main__":
 
     print(f"{'EXERCISE 2':=^30}")
 
-    expression = ('/', ('expt', 'x', 5), ('expt', ('-', ('expt', 'x', 2), 1), ('/', 5, 2)))
-    repr_expresion(expression)
+    expression = (
+        "/",
+        ("expt", "x", 5),
+        ("expt", ("-", ("expt", "x", 2), 1), ("/", 5, 2)),
+    )
+    repr_expression(expression)
 
     print(depth(expression))
 
+    print(f"{'EXERCISE 3':=^30}")
+
+    expression = ["*", "2", ["*", ["+", "x", "1"], ["+", "y", "3"]]]
+    repr_expression(expression)
+    simplify(expression)
+    # TODO: How to apply simplify recursively until no changes are made on the expression.
+    repr_expression(expression)
