@@ -1,3 +1,17 @@
+## Table of Contents + Main Results
+### Lab 0: Recursion Examples
+### Lab 1: Searching Algorithms
+#### DFS and BFS
+#### DFS and Hill Climbing
+#### BFS and Beam Search
+#### Branch and Bound + Extended Nodes
+#### A\*
+$$A^{*} = \text{branch and bound} + \text{extended set} + \text{admissible heuristic}$$
+#### Comparisson table?
+
+
+
+
 ## References
 - [Universidad Carlos III de Madrid Course](https://ocw.uc3m.es/mod/page/view.php?id=1431)
 - [MIT Course](https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/video_galleries/lecture-videos/)
