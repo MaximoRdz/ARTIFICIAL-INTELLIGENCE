@@ -20,10 +20,10 @@ def draw_path_edges(ax, G, node_positions, path):
     )
 
 
-def update(ax, G, node_positions, frame):
+def update(ax, G, node_positions, title, frame):
     ax.clear()
     ax.axis("off")
-
+    ax.set_title(title)
     background_nodes = nx.draw_networkx_nodes(
         G, nodelist=G.nodes(), pos=node_positions, node_color=NODE_DEFAULT_COLOR, ax=ax,
     )
@@ -49,10 +49,10 @@ def update(ax, G, node_positions, frame):
     )
 
 
-def animate_search(fig, ax, G, node_positions, explored_paths, interval=500):
+def animate_search(fig, ax, G, node_positions, title, explored_paths, interval=500):
     return animation.FuncAnimation(
         fig,
-        partial(update, ax, G, node_positions),
+        partial(update, ax, G, node_positions, title),
         interval=interval,
         frames=explored_paths,
         repeat=False,
