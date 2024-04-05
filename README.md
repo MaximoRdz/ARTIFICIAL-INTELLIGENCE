@@ -2,13 +2,9 @@
 ### Lab 0: Recursion Examples
 ### Lab 1: Searching Algorithms
 #### DFS and BFS
-#### DFS and Hill Climbing
-#### BFS and Beam Search
-#### Branch and Bound + Extended Nodes
-#### A\*
+#### Hill Climbing and Beam Search
+#### Branch and Bound + Extended Nodes and A\*
 $$A^{*} = \text{branch and bound} + \text{extended set} + \text{admissible heuristic}$$
-#### Comparisson table?
-
 
 
 
