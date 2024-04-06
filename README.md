@@ -2,6 +2,9 @@
 ### Lab 0: Recursion Examples
 ### Lab 1: Searching Algorithms
 #### DFS and BFS
+| Depth First Search                                                                                                                                                                                                                       | Breadth First Search |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| ![DFS]([COMPUTATIONAL_BIOLOGY/lab1-Searching-Heuristics/gifs/a_star.gif at main · MaximoRdz/COMPUTATIONAL_BIOLOGY (github.com)](https://github.com/MaximoRdz/COMPUTATIONAL_BIOLOGY/blob/main/lab1-Searching-Heuristics/gifs/a_star.gif)) |                      |
 #### Hill Climbing and Beam Search
 #### Branch and Bound + Extended Nodes and A\*
 $$A^{*} = \text{branch and bound} + \text{extended set} + \text{admissible heuristic}$$
