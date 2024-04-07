@@ -23,7 +23,7 @@ def draw_path_edges(ax, G, node_positions, path):
 def update(ax, G, node_positions, title, frame):
     ax.clear()
     ax.axis("off")
-    ax.set_title(title)
+    ax.set_title(title, horizontalalignment="left")
     background_nodes = nx.draw_networkx_nodes(
         G, nodelist=G.nodes(), pos=node_positions, node_color=NODE_DEFAULT_COLOR, ax=ax,
     )
