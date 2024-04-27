@@ -15,6 +15,18 @@
 | ![COMPUTATIONAL_BIOLOGY/lab1-Searching-Heuristics/gifs/branch_n_bound.gif at main · MaximoRdz/COMPUTATIONAL_BIOLOGY (github.com)](https://github.com/MaximoRdz/COMPUTATIONAL_BIOLOGY/blob/main/lab1-Searching-Heuristics/gifs/branch_n_bound.gif) | ![COMPUTATIONAL_BIOLOGY/lab1-Searching-Heuristics/gifs/a_star.gif at main · MaximoRdz/COMPUTATIONAL_BIOLOGY (github.com)](https://github.com/MaximoRdz/COMPUTATIONAL_BIOLOGY/blob/main/lab1-Searching-Heuristics/gifs/a_star.gif) |
 
 $$A^{*} = \text{branch and bound} + \text{extended set} + \text{admissible heuristic}$$
+### Lab 2: Games search
+Minimax + alpha-beta + progressive deepening implementation on a simple game
+#### TODO
+- [ ] Connect four game
+- [ ] Game visualization
+### Lab 3: Constraints and Domain reduction
+Applicable to resource optimization problems (i.e. flights scheduling)
+Graph coloring example, no two connected nodes can share the same color. The algorithm will only converge if there are enough resources (3 vs 4 colors available).
+
+| 3 colors                                                                                                                                                                                                                                                                            | 4 colors                                                                                                                                                                                                                                                                            |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![COMPUTATIONAL_BIOLOGY/lab3-Constraints-Domain-Reduction/gifs/graph_coloring_3_colors.gif at main · MaximoRdz/COMPUTATIONAL_BIOLOGY (github.com)](https://github.com/MaximoRdz/COMPUTATIONAL_BIOLOGY/blob/main/lab3-Constraints-Domain-Reduction/gifs/graph_coloring_3_colors.gif) | ![COMPUTATIONAL_BIOLOGY/lab3-Constraints-Domain-Reduction/gifs/graph_coloring_4_colors.gif at main · MaximoRdz/COMPUTATIONAL_BIOLOGY (github.com)](https://github.com/MaximoRdz/COMPUTATIONAL_BIOLOGY/blob/main/lab3-Constraints-Domain-Reduction/gifs/graph_coloring_4_colors.gif) |
 
 ## References
 - [Universidad Carlos III de Madrid Course](https://ocw.uc3m.es/mod/page/view.php?id=1431)
