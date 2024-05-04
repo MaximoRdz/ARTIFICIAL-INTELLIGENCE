@@ -35,3 +35,5 @@ Graph coloring example, no two connected nodes can share the same color. The alg
 * [Customizing Matplotlib with style sheets and rcParams — Matplotlib 3.8.4 documentation](https://matplotlib.org/stable/users/explain/customizing.html#customizing-with-dynamic-rc-settings)
 ## Bibliography
 - Python's Networkx Package: [examples](https://networkx.org/documentation/latest/auto_examples/index.html)
+- [MIT AI BOOK TOC](https://people.csail.mit.edu/phw/Books/AITABLE.HTML)
+    - [Contents](https://courses.csail.mit.edu/6.034f/ai3/)
