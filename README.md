@@ -38,9 +38,9 @@ Graph coloring example, no two connected nodes can share the same color. The alg
 | ![COMPUTATIONAL_BIOLOGY/lab5-Learning/images/ccp_alpha_search.png at main · MaximoRdz/COMPUTATIONAL_BIOLOGY (github.com)](https://github.com/MaximoRdz/COMPUTATIONAL_BIOLOGY/blob/main/lab5-Learning/images/ccp_alpha_search.png) | ![COMPUTATIONAL_BIOLOGY/lab5-Learning/images/cv_final_tree.png at main · MaximoRdz/COMPUTATIONAL_BIOLOGY (github.com)](https://github.com/MaximoRdz/COMPUTATIONAL_BIOLOGY/blob/main/lab5-Learning/images/cv_final_tree.png) | ![COMPUTATIONAL_BIOLOGY/lab5-Learning/images/ccp_alpha_final_tree.png at main · MaximoRdz/COMPUTATIONAL_BIOLOGY (github.com)](https://github.com/MaximoRdz/COMPUTATIONAL_BIOLOGY/blob/main/lab5-Learning/images/ccp_alpha_final_tree.png) |
 ### Lab7: Genetic Algorithms
 
-| Maxima Search                                                                                                                                                                                                                                       | PyGAD |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
-| ![COMPUTATIONAL_BIOLOGY/lab7-Genetic-Algorithms/gifs/genetic_algorithm.gif at main · MaximoRdz/COMPUTATIONAL_BIOLOGY (github.com)](https://github.com/MaximoRdz/COMPUTATIONAL_BIOLOGY/blob/main/lab7-Genetic-Algorithms/gifs/genetic_algorithm.gif) |       |
+| Maxima Search                                                                                                                                                                                                                                       |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![COMPUTATIONAL_BIOLOGY/lab7-Genetic-Algorithms/gifs/genetic_algorithm.gif at main · MaximoRdz/COMPUTATIONAL_BIOLOGY (github.com)](https://github.com/MaximoRdz/COMPUTATIONAL_BIOLOGY/blob/main/lab7-Genetic-Algorithms/gifs/genetic_algorithm.gif) |
 
 ## References
 - [Universidad Carlos III de Madrid Course](https://ocw.uc3m.es/mod/page/view.php?id=1431)
